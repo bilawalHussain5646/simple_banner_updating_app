@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html style="font-size: 16px" lang="en">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="utf-8" />
+    <meta name="keywords" content="" />
+    <meta name="description" content="" />
+    <title>Banner LG HA Promotions</title>
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='nicepage.css') }}"
+      media="screen"
+    />
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='media-partner-survey.css') }}"
+      media="screen"
+    />
+    <script
+      class="u-script"
+      type="text/javascript"
+      src="{{ url_for('static', filename='jquery.js') }}"
+      defer=""
+    ></script>
+    <script
+      class="u-script"
+      type="text/javascript"
+      src="{{ url_for('static', filename='nicepage.js') }}"
+      defer=""
+    ></script>
+    <style>
+      * {
+        scroll-behavior: smooth;
+      }
+      .mobile-style {
+        display: none !important;
+      }
+      .desktop-style {
+        display: initial !important;
+      }
+      .upload-file-container {
+        box-sizing: border-box;
+        margin: 15px 0;
+        display: grid;
+        grid-template-columns: repeat(2, 45%);
+        gap: 10px;
+      }
+
+      @media only screen and (max-width: 600px) {
+        .upload-file-container {
+          display: grid;
+          grid-template-columns: auto;
+          gap: 10px;
+        }
+        .mobile-style {
+          display: initial !important;
+        }
+        .desktop-style {
+          display: none !important;
+        }
+      }
+    </style>
+    <meta name="generator" content="Nicepage 6.8.8, nicepage.com" />
+    <meta name="referrer" content="origin" />
+
+    <link
+      id="u-theme-google-font"
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i|Open+Sans:300,300i,400,400i,500,500i,600,600i,700,700i,800,800i"
+    />
+    <link
+      id="u-page-google-font"
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,500,500i,600,600i,700,700i,800,800i"
+    />
+
+    <script type="application/ld+json">
+      {
+        "@context": "http://schema.org",
+        "@type": "Organization",
+        "name": "Site21"
+      }
+    </script>
+  </head>
+  <body class="u-body u-xl-mode">
+    <form method="POST" action="/" enctype="multipart/form-data">
+      <section class="u-clearfix u-custom-color-3 u-section-1" id="sec-dcdb">
+        <div class="u-clearfix u-sheet u-valign-middle u-sheet-1">
+          <h3 class="u-align-center u-text u-text-1">
+            <b><u>Banners LG HA Promotions</u></b>
+          </h3>
+        </div>
+      </section>
+
+      <section class="u-clearfix u-custom-color-3" id="carousel_1d13">
+        <div
+          class="u-clearfix u-sheet u-valign-middle-xs u-valign-top-lg u-valign-top-md u-valign-top-sm u-valign-top-xl u-sheet-1"
+        >
+          <div class="u-form u-form-radios-spacing-37 u-form-1">
+            <div
+              class="u-clearfix u-form-spacing-0 u-form-vertical u-inner-form"
+              style="padding: 0px"
+            >
+              <div
+                class="u-form-group u-form-input-layout-horizontal u-form-select u-label-top u-form-group-1"
+              >
+                <label
+                  for="select-464b"
+                  class="u-custom-font u-label u-spacing-0 u-label-1"
+                  >Country
+                </label>
+                <div class="u-form-select-wrapper">
+                  <select
+                    id="countrySelect"
+                    name="country"
+                    class="u-input u-input-rectangle"
+                    onchange="generate_banners_fields()"
+                    required
+                  >
+                    <option value="" data-calc="">Select</option>
+                    {%for country in countries_list %}
+                    <option value="{{country.id}}" data-calc="">
+                      {{country.name}}
+                    </option>
+                    {%endfor%}
+                  </select>
+                  <svg
+                    class="u-caret u-caret-svg"
+                    version="1.1"
+                    id="Layer_1"
+                    xmlns="http://www.w3.org/2000/svg"
+                    xmlns:xlink="http://www.w3.org/1999/xlink"
+                    x="0px"
+                    y="0px"
+                    width="16px"
+                    height="16px"
+                    viewBox="0 0 16 16"
+                    style="fill: currentColor"
+                    xml:space="preserve"
+                  >
+                    <polygon class="st0" points="8,12 2,4 14,4 "></polygon>
+                  </svg>
+                </div>
+              </div>
+
+              <label style="padding: 15px 0 0 0; color: red"
+                >*Banners should be jpeg format only
+              </label>
+              <div
+                class="u-form-group u-form-input-layout-horizontal u-form-select u-label-top u-form-group-1"
+              >
+                <div class="upload-file-container">
+                  <div>
+                    <label
+                      for="select-464b"
+                      class="u-custom-font u-label u-spacing-0 u-label-1"
+                      >Desktop EN
+                    </label>
+                    <div>
+                      <input
+                        type="file"
+                        name="desktop_en"
+                        id="desktop_en"
+                        style="width: 100%"
+                        required
+                      />
+                    </div>
+                  </div>
+                  <div>
+                    <label
+                      for="select-464b"
+                      class="u-custom-font u-label u-spacing-0 u-label-1"
+                      >Mobile EN
+                    </label>
+                    <div>
+                      <input
+                        type="file"
+                        name="mobile_en"
+                        id="mobile_en"
+                        style="width: 100%"
+                        required
+                      />
+                    </div>
+                  </div>
+
+                  <div id="desktop_ar">
+                    <label
+                      for="select-464b"
+                      class="u-custom-font u-label u-spacing-0 u-label-1"
+                      >Desktop AR
+                    </label>
+                    <div>
+                      <input
+                        type="file"
+                        name="desktop_ar"
+                        style="width: 100%"
+                      />
+                    </div>
+                  </div>
+                  <div style="width: 100%" id="mobile_ar">
+                    <label
+                      for="select-464b"
+                      class="u-custom-font u-label u-spacing-0 u-label-1"
+                      >Mobile AR
+                    </label>
+                    <div>
+                      <input type="file" name="mobile_ar" style="width: 100%" />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section
+        class="u-align-center u-clearfix u-custom-color-3 u-section-8"
+        id="sec-590b"
+      >
+        <div class="u-clearfix u-sheet u-sheet-1">
+          <div class="u-form u-form-1">
+            <div
+              class="u-clearfix u-form-spacing-50 u-form-vertical u-inner-form"
+              style="padding: 15px"
+            >
+              <div
+                class="u-align-center u-form-group u-form-submit u-label-top"
+              >
+                <center>
+                  <button
+                    type="submit"
+                    class="u-active-custom-color-5 u-btn u-button-style u-custom-color-5 u-custom-font u-hover-custom-color-5 u-btn-1"
+                  >
+                    Submit
+                  </button>
+                </center>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </form>
+    <script>
+      function generate_banners_fields() {
+        let countryID = document.getElementById("countrySelect").value;
+
+        if (countryID == "az") {
+          document.getElementById("desktop_ar").style.visibility = "hidden";
+          document.getElementById("mobile_ar").style.visibility = "hidden";
+        } else {
+          document.getElementById("desktop_ar").style.visibility = "visible";
+          document.getElementById("mobile_ar").style.visibility = "visible";
+        }
+      }
+    </script>
+  </body>
+</html>
