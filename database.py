@@ -5,12 +5,12 @@ from flask_sqlalchemy import SQLAlchemy
 
 
 
-username = "lg_pq_test"
-password = "1OFOIi5&ovD7"
-host = "118.139.161.13" 
+username = "username"
+password = "password"
+host = "host_ip" 
 # lebanon_database = "lebanon_ramadan"
 # lg_showcase = "oled_test_pq"
-lg_showcase = "lg_pq_test"
+lg_showcase = "database_name"
 
 # database_file = f'mysql://{username}:{password}@{host}/{lebanon_database}'
 database_file = f'mysql://{username}:{password}@{host}/{lg_showcase}'
